@@ -1,0 +1,15 @@
+.icon {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--menu {
+    background-image: url("../images/icon/menu.svg");
+    &._active {
+      background-image: url("../images/icon/close.svg");
+    }
+  }
+}

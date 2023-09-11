@@ -1,0 +1,19 @@
+.footer {
+  background-color: #191E25;
+  padding: 22px 0;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer__menu-item {
+  color: #fff;
+}
+.footer__menu-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer__copirate-info {
+  color: #333D4B;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+}/*# sourceMappingURL=footer.css.map */

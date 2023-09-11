@@ -1,0 +1,66 @@
+.footer {
+  background-color: #191E25;
+  padding: 22px 0;
+  &__row {
+    @include onTablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+
+      @include onTablet {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__logo-link {
+
+  }
+  &__logo-image {
+
+  }
+  &__navigation {
+
+  }
+  &__menu {
+    @include onTablet {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+  &__menu-item {
+    color: #fff;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+
+      @include onTablet {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__menu-link {
+    transition-duration: 300ms;
+    
+    &._active {
+      color: #F9280F;
+    }
+
+    &:hover {
+      color: #F9280F;
+    }
+  }
+  &__copirate-info {
+    color: #333D4B;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

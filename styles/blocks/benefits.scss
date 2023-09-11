@@ -1,0 +1,149 @@
+.benefits {
+  padding: 100px 0 100px;
+
+  background-image: url("../images/benefits-back.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  &--margin-bottom-100 {
+    margin-bottom: 100px;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 60%;
+  }
+  &__row {
+    position: relative;
+    z-index: 3;
+
+    @include onTablet {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+  }
+
+  &__image-box {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #fff;
+    top: 0;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(-50%, -50%);
+    transition-duration: 300ms;
+
+    @include onTablet {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include onDesktop {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &__image {
+    width: 24px;
+    height: 24px;
+
+    @include onTablet {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include onDesktop {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  &__title {
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+
+    transition-duration: 300ms;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+  &__text {
+    text-align: center;
+    transition-duration: 300ms;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  &__item {
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 40px 16px 30px;
+
+    @include onTablet {
+      padding: 50px 16px 30px;
+    }
+
+    @include onDesktop {
+      padding: 60px 16px 30px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #fff;
+    border: 1px dashed #fff;
+
+    position: relative;
+
+    transition-duration: 300ms;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @include onTablet {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover {
+      background-color: #fff;
+      border-radius: 10px;
+
+      .benefits__image-box {
+        border-color: #F9280F;
+      }
+
+      .benefits__title {
+        color: #F9280F;
+      }
+
+      .benefits__text {
+        color: #191E25;
+      }
+    }
+  }
+}

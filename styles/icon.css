@@ -1,0 +1,14 @@
+.icon {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon--menu {
+  background-image: url("../images/icon/menu.svg");
+}
+.icon--menu._active {
+  background-image: url("../images/icon/close.svg");
+}/*# sourceMappingURL=icon.css.map */
