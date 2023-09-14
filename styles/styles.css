@@ -926,6 +926,16 @@ ul {
 .main-content__image-container {
   height: 300px;
 }
+@media (min-width: 768px) {
+  .main-content__image-container {
+    height: 340px;
+  }
+}
+@media (min-width: 1280px) {
+  .main-content__image-container {
+    height: 390px;
+  }
+}
 .main-content__image {
   width: 100%;
   height: 100%;
@@ -1005,7 +1015,7 @@ ul {
   .main-content__sidebar {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 50;
+    gap: 50px;
   }
 }
 .main-content__tags-cloud {
