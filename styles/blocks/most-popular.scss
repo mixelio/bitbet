@@ -12,6 +12,7 @@
     }
   }
   &__title {
+    font-family: inherit;
     margin-bottom: 16px;
     padding-left: 16px;
 
@@ -136,6 +137,7 @@
   
 
   &__item-title {
+    font-family: inherit;
     font-size: 25px;
     font-weight: 700;
     line-height: normal;

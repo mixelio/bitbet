@@ -51,41 +51,7 @@ if (menuOpener) {
   });
 }
 
-// if (menuCloser) {
-//   menuCloser.addEventListener('click', (e) => {
-//     body.classList.toggle('_lock');
-//     mainMenu.classList.toggle('_open');
 
-//     if (!isMobile.any()) {
-//       if (body.classList.contains('_lock')) {
-//         body.style.paddingRight = scrolWidth + 'px';
-//       } else {
-//         body.style.paddingRight = 0;
-//       }
-//     }
-//   });
-// }
-
-// if (menuCloser) {
-//   for (let i = 0; i < menuLinks.length; i++) {
-//     menuLinks[i].addEventListener('click', (e) => {
-//       body.classList.toggle('_lock');
-//       mainMenu.classList.toggle('_open');
-
-//       if (!isMobile.any()) {
-//         if (body.classList.contains('_lock')) {
-//           setTimeout(() => {
-//             body.style.paddingRight = scrolWidth + 'px';
-//           }, 300);
-//         } else {
-//           setTimeout(() => {
-//             body.style.paddingRight = 0;
-//           }, 300);
-//         }
-//       }
-//     });
-//   }
-// }
 
 $(document).ready(() => {
   $('.owl-carousel').owlCarousel({
@@ -99,7 +65,6 @@ $(document).ready(() => {
     dots: true,
     stagePadding: 40,
     loop: false,
-
 
     responsive: {
       768: {

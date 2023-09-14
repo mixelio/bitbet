@@ -46,10 +46,18 @@ ul {
     margin: 0;
     padding: 0;
     background: #F7F7F7;
+    
+    counter-reset: article;
 
     &._lock {
       overflow: hidden;
     }
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: normal;
   }
 
   .container {
